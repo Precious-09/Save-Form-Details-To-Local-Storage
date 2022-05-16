@@ -1,0 +1,90 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	
+	box-sizing: border-box;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: rgb(35, 35, 53)
+}
+
+#task {
+	flex: 1 1 0%;
+	background-color: rgb(92, 88, 88);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.container{
+    margin-left: 500px;
+}
+
+.collection{
+    margin-left: 400px;
+    
+    
+}
+
+#update {
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#update:hover {
+	opacity: 0.8;
+}
+
+#update:active {
+	opacity: 0.6;
+}
+
+.delete-item {
+    color: crimson;
+    display: inline-block;
+    left: 300px;
+    position: relative;
+    
+}
+.edit-item {
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    display: inline-block;
+    left: 250px;
+    position: relative;
+
+}
